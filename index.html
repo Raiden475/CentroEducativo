@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Gestión de Centro Educativo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <div class="container">
+    <h1>Gestión de Centro Educativo</h1>
+    <div class="form">
+      <label for="opcion">Selecciona una opción:</label>
+      <select id="opcion">
+        <option value="1">Dar de alta a una persona</option>
+        <option value="2">Dar de baja a una persona</option>
+        <option value="3">Imprimir información del centro educativo</option>
+      </select>
+      <button onclick="ejecutarAccion()">Ejecutar</button>
+    </div>
+    <div id="output" class="output"></div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
